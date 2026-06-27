@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drop 01 — Figmaland</title>
+  <meta name="description" content="Drop 01 four-pack product details">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container-wide" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/logo-dark.png" alt="Figmaland"></a>
+      <div class="desktop-nav"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a></div>
+      <div class="nav-actions">
+        <span class="account-circle">♙</span><a class="account-label" href="#">My Account</a>
+        <button class="icon-button favorite-button" type="button" aria-label="Favorites">♡</button>
+        <a class="cart-button" href="product.html" aria-label="Shopping cart"><span>🛒</span><b>1</b></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a></div>
+    </nav>
+    <div class="breadcrumb"><div class="container-wide"><a href="index.html">Home</a><span>›</span><span>Marketplace Products</span></div></div>
+  </header>
+
+  <main class="product-page">
+    <section class="product-shell">
+      <div class="product-card">
+        <div class="product-gallery">
+          <div class="main-product-image">
+            <img src="assets/detail-main.jpg" alt="Drop 01 shirt and tie set" data-main-product-image>
+            <button type="button" aria-label="Zoom image">⌕</button>
+          </div>
+          <div class="thumbnail-strip" data-thumbnail-strip>
+            <button class="carousel-arrow prev" type="button" aria-label="Previous image">‹</button>
+            <button class="thumbnail active" type="button" data-image="assets/detail-main.jpg"><img src="assets/detail-thumb-01.jpg" alt=""></button>
+            <button class="thumbnail" type="button" data-image="assets/detail-thumb-02.jpg"><img src="assets/detail-thumb-02.jpg" alt=""></button>
+            <button class="thumbnail" type="button" data-image="assets/detail-thumb-03.jpg"><img src="assets/detail-thumb-03.jpg" alt=""></button>
+            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/detail-thumb-04.jpg"><img src="assets/detail-thumb-04.jpg" alt=""></button>
+            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/detail-thumb-05.jpg"><img src="assets/detail-thumb-05.jpg" alt=""></button>
+            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/detail-thumb-06.jpg"><img src="assets/detail-thumb-06.jpg" alt=""></button>
+            <button class="carousel-arrow next" type="button" aria-label="Next image">›</button>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h1>Drop 01 <span>(4-pack)</span></h1>
+          <div class="rating"><b>4.0</b><span>★★★★☆</span><small>10 Reviews</small></div>
+          <div class="price"><strong>$150</strong><del>$280</del></div>
+          <div class="color-picker"><b>Color</b><div><button class="cyan active" aria-label="Cyan"></button><button class="green" aria-label="Green"></button><button class="orange" aria-label="Orange"></button><button class="navy" aria-label="Navy"></button></div></div>
+          <div class="purchase-actions">
+            <button class="button button--muted wishlist-action" type="button">♡ <span>Add To Wishlist</span></button>
+            <button class="button button--primary add-cart-action" type="button">Add To Card</button>
+          </div>
+          <div class="product-description">
+            <h2>Product Description</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule... <a href="#description">See Full Description</a></p>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item open"><button type="button"><b>Composition</b><span>+</span></button><div><p>- Cotton 80%</p><p>- Polyester 20%</p><p>- Elastic rib</p></div></div>
+            <div class="accordion-item"><button type="button"><b>Shipping options</b><span>+</span></button><div><p>Free standard delivery.</p></div></div>
+            <div class="accordion-item"><button type="button"><b>Find in local stores</b><span>+</span></button><div><p>Available in selected stores.</p></div></div>
+          </div>
+          <div class="share-widget">
+            <b>Share this product :</b>
+            <div><a href="#" aria-label="Twitter">♥</a><a class="filled" href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="More">•••</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tabs" id="description">
+        <div class="product-tabs__buttons"><button class="active" type="button">Description</button><button type="button">Reviews ( 20 )</button><button class="desktop-only" type="button">More products</button></div>
+        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stum ptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcat cher synth. Cosby sweater eu banh mi</p>
+        <div class="feature-list"><b>Product Features :</b><span>- Unlimited product updates</span><span>- Unlimited Shares</span><span>- Every feature in Figmaland</span></div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="container">
+        <h2>Other Produits</h2>
+        <div class="related-carousel">
+          <button class="carousel-arrow prev" type="button">‹</button>
+          <div class="related-grid" data-related-grid></div>
+          <button class="carousel-arrow next" type="button">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container-wide">
+      <a class="brand" href="index.html"><img src="assets/logo-light.png" alt="Figmaland"></a>
+      <nav class="footer-nav"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a><a href="#">Docs / Components</a></nav>
+      <div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

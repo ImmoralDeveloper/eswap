@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fashion — Figmaland</title>
+  <meta name="description" content="Browse the Figmaland fashion collection">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container-wide" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/logo-dark.png" alt="Figmaland"></a>
+      <div class="desktop-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="#">Account</a>
+        <a href="#">Pages</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="nav-actions">
+        <span class="account-circle" aria-hidden="true">♙</span>
+        <a class="account-label" href="#">My Account</a>
+        <button class="icon-button favorite-button" type="button" aria-label="Favorites">♡</button>
+        <a class="cart-button" href="product.html" aria-label="Shopping cart"><span>🛒</span><b>1</b></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a>
+      </div>
+    </nav>
+    <div class="breadcrumb"><div class="container-wide"><a href="index.html">Home</a><span>›</span><span>Fashion</span></div></div>
+  </header>
+
+  <main>
+    <section class="listing-hero">
+      <div class="listing-hero__content">
+        <p class="eyebrow">SUMMER 2020</p>
+        <h1>Fashion</h1>
+        <p>Find The Perfect style for you</p>
+        <button class="filter-trigger" type="button" aria-expanded="false" aria-controls="mobile-filters">Filter <span>⌃⌄</span></button>
+      </div>
+    </section>
+
+    <section class="listing-shell">
+      <aside class="filters" id="mobile-filters">
+        <label class="search-field">
+          <span class="sr-only">Search for products</span>
+          <input type="search" placeholder="Search for products">
+          <span aria-hidden="true">⌕</span>
+        </label>
+        <div class="filter-panel filter-categories">
+          <div class="filter-group expanded">
+            <button type="button"><strong>Accessories</strong><span>+</span></button>
+            <ul><li>View All</li><li>Bags</li><li>Belts</li><li>Cosmetics</li><li>Hats</li><li>Jewelry</li></ul>
+          </div>
+          <div class="filter-group"><button type="button"><strong>Bags</strong><span>+</span></button></div>
+          <div class="filter-group"><button type="button"><strong>Clothing</strong><span>+</span></button></div>
+          <div class="filter-group"><button type="button"><strong>Entertainement</strong><span>+</span></button></div>
+          <div class="filter-group"><button type="button"><strong>Furniture &amp; Decor</strong><span>+</span></button></div>
+          <div class="filter-group"><button type="button"><strong>Gadgets</strong><span>+</span></button></div>
+          <div class="filter-group"><button type="button"><strong>Shoes</strong><span>+</span></button></div>
+        </div>
+        <div class="filter-panel">
+          <h2>Color</h2>
+          <label><input type="radio" name="color" checked><i class="swatch swatch--red"></i> Red <span>103</span></label>
+          <label><input type="radio" name="color"><i class="swatch swatch--blue"></i> Blue <span>23</span></label>
+          <label><input type="radio" name="color"><i class="swatch swatch--brown"></i> Brown <span>12</span></label>
+          <label><input type="radio" name="color"><i class="swatch swatch--orange"></i> Orange <span>22</span></label>
+          <label><input type="radio" name="color"><i class="swatch swatch--yellow"></i> Yellow <span>1</span></label>
+          <label><input type="radio" name="color"><i class="swatch swatch--pink"></i> Pink <span>22</span></label>
+        </div>
+        <div class="filter-panel">
+          <h2>Size</h2>
+          <label><input type="radio" name="size" checked> Extra Large</label>
+          <label><input type="radio" name="size"> Large</label>
+          <label><input type="radio" name="size"> Medium</label>
+          <label><input type="radio" name="size"> Small</label>
+          <label><input type="radio" name="size"> Extra Small</label>
+        </div>
+        <div class="filter-panel price-filter">
+          <h2>Filter by price</h2>
+          <div class="price-range"><i></i><span style="left:10%">15</span><span style="left:77%">250</span></div>
+          <div class="price-values"><span>15$</span><span>250$</span></div>
+        </div>
+        <div class="filter-panel">
+          <h2>Brand</h2>
+          <label><input type="checkbox"> Adidas <span>11</span></label>
+          <label><input type="checkbox" checked> Armani <span>23</span></label>
+          <label><input type="checkbox"> Calvin Klein <span>12</span></label>
+          <label><input type="checkbox"> Columbia <span>04</span></label>
+          <label><input type="checkbox"> Converse <span>22</span></label>
+          <label><input type="checkbox"> Dockers <span>103</span></label>
+        </div>
+      </aside>
+
+      <div class="catalog">
+        <div class="catalog-toolbar">
+          <div class="sort-control"><span>Sort by :</span><select aria-label="Sort products"><option>Popularity</option><option>Price</option><option>Newest</option></select></div>
+          <div class="view-controls" aria-label="View options"><button class="active" type="button">▦</button><button type="button">☷</button></div>
+        </div>
+        <div class="catalog-grid" data-catalog-grid></div>
+        <nav class="pagination pagination--desktop" aria-label="Pagination">
+          <button type="button">‹</button><button class="active" type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><span>•••</span><button type="button">›</button>
+        </nav>
+        <nav class="pagination pagination--mobile" aria-label="Pagination">
+          <button type="button">‹</button><span><b>1</b> | 10</span><button type="button">›</button>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container-wide">
+      <a class="brand" href="index.html"><img src="assets/logo-light.png" alt="Figmaland"></a>
+      <nav class="footer-nav"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a><a href="#">Docs / Components</a></nav>
+      <div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

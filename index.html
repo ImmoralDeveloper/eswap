@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figmaland — New Collection</title>
+  <meta name="description" content="Figmaland fashion shop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header home-header">
+    <nav class="navbar navbar--overlay container-wide" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Figmaland home">
+        <img src="assets/logo-light.png" alt="Figmaland">
+      </a>
+      <div class="desktop-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="#">Account</a>
+        <a href="#">Pages</a>
+        <a href="#blog">Blog</a>
+        <a href="#">Docs / Components</a>
+      </div>
+      <div class="nav-actions">
+        <span class="account-circle" aria-hidden="true">♙</span>
+        <a class="account-label" href="#">My Account</a>
+        <button class="icon-button favorite-button" type="button" aria-label="Favorites">♡</button>
+        <a class="cart-button" href="product.html" aria-label="Shopping cart">
+          <span aria-hidden="true">🛒</span><b>1</b>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="#">Account</a>
+        <a href="#">Pages</a>
+        <a href="#blog">Blog</a>
+        <a href="#">Docs / Components</a>
+      </div>
+    </nav>
+
+    <div class="home-hero">
+      <div class="home-hero__content">
+        <p class="eyebrow">SUMMER 2020</p>
+        <h1>New Collection</h1>
+        <p>Find The Perfect style for you</p>
+        <a class="button button--light" href="products.html">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="category-section container" aria-label="Shop by category">
+      <div class="category-grid">
+        <a class="category-card category-card--hat" href="products.html">
+          <img src="assets/category-hat.jpg" alt="Hat collection">
+          <span>HAT</span>
+        </a>
+        <a class="category-card category-card--shoes" href="products.html">
+          <img src="assets/category-shoes.jpg" alt="Shoes collection">
+          <span>SHOES</span>
+        </a>
+        <a class="category-card category-card--dresses" href="products.html">
+          <img src="assets/category-dresses.jpg" alt="Dresses collection">
+          <span>DRESSES</span>
+        </a>
+        <a class="category-card category-card--bags" href="products.html">
+          <img src="assets/category-bags.jpg" alt="Bags collection">
+          <span>BAGS</span>
+        </a>
+        <a class="category-card category-card--clothes" href="products.html">
+          <img src="assets/category-clothes.jpg" alt="Clothes collection">
+          <span>CLOTHES</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="section-rule container"></div>
+
+    <section class="products-section section" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <h2 id="featured-title">Featured Products</h2>
+        <div class="tabs" role="tablist" aria-label="Product selection">
+          <button class="tab active" type="button" role="tab">Featured</button>
+          <button class="tab" type="button" role="tab">Best Seller</button>
+          <button class="tab" type="button" role="tab">New Arrivals</button>
+        </div>
+      </div>
+      <div class="product-grid product-grid--featured container-small" data-home-grid="featured"></div>
+    </section>
+
+    <section class="products-section products-section--latest section" aria-labelledby="latest-title">
+      <div class="section-heading">
+        <h2 id="latest-title">Latest Products</h2>
+      </div>
+      <div class="product-grid product-grid--latest container-small" data-home-grid="latest"></div>
+    </section>
+
+    <section class="blog-section section" id="blog" aria-labelledby="blog-title">
+      <div class="section-heading">
+        <h2 id="blog-title">Our Blog</h2>
+      </div>
+      <div class="blog-grid container-small">
+        <article class="blog-card">
+          <img src="assets/blog-01.jpg" alt="Accessories arranged on a table">
+          <div class="blog-card__body">
+            <time datetime="2019-06-20">20 JUNE 2019</time>
+            <h3>Life Tips From Top Ten Adventure</h3>
+            <p>Slate helps you see how many more days you need to work to reach.</p>
+            <div class="blog-tags"><a href="#">Google</a><a href="#">Trending</a><a href="#">New</a></div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="assets/blog-02.jpg" alt="Two bright fish">
+          <div class="blog-card__body">
+            <time datetime="2019-06-20">20 JUNE 2019</time>
+            <h3>Life Tips From Top Ten Adventure</h3>
+            <p>Slate helps you see how many more days you need to work to reach.</p>
+            <div class="blog-tags"><a href="#">Google</a><a href="#">Trending</a><a href="#">New</a></div>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="assets/blog-03.jpg" alt="Fashion accessories on a blue background">
+          <div class="blog-card__body">
+            <time datetime="2019-06-20">20 JUNE 2019</time>
+            <h3>Top Ten Adventure Travelers</h3>
+            <p>Slate helps you see how many more days you need to work to reach.</p>
+            <div class="blog-tags"><a href="#">Google</a><a href="#">Trending</a><a href="#">New</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="instagram-section" aria-labelledby="instagram-title">
+      <h2 id="instagram-title">Shop on Instagram</h2>
+      <div class="instagram-track">
+        <a class="instagram-card" href="#"><img src="assets/instagram-05.jpg" alt="Summer fashion"><span>Summer</span></a>
+        <a class="instagram-card" href="#"><img src="assets/instagram-01.jpg" alt="Bags"><span>Bags</span></a>
+        <a class="instagram-card" href="#"><img src="assets/instagram-02.jpg" alt="Hats"><span>Hats</span></a>
+        <a class="instagram-card" href="#"><img src="assets/instagram-03.jpg" alt="Casual fashion"><span>Casual</span></a>
+        <a class="instagram-card" href="#"><img src="assets/instagram-04.jpg" alt="Artist fashion"><span>Artists</span></a>
+      </div>
+      <div class="carousel-dots" aria-hidden="true"><i></i><i class="active"></i><i></i></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container-wide">
+      <a class="brand" href="index.html"><img src="assets/logo-light.png" alt="Figmaland"></a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="#">Account</a>
+        <a href="#">Pages</a>
+        <a href="#blog">Blog</a>
+        <a href="#">Docs / Components</a>
+      </nav>
+      <div class="social-links" aria-label="Social networks">
+        <a href="#" aria-label="Twitter">♥</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
