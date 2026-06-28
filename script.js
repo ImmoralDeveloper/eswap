@@ -11,14 +11,14 @@ const defaultCart = [
     title: "Drop 01",
     variant: "4-pack · Blue",
     price: 150,
-    image: "assets/detail-related-01.jpg",
+    image: "assets/detail-related-01.webp",
     quantity: 1
   }
 ];
 
 const defaultFavorites = [
-  { id: "home-product-01", title: "Floral Essential Dress", variant: "Red", price: 32, image: "assets/home-product-01.jpg" },
-  { id: "home-product-03", title: "Everyday Graphic Tee", variant: "White", price: 32, image: "assets/home-product-03.jpg" }
+  { id: "home-product-01", title: "Floral Essential Dress", variant: "Red", price: 32, image: "assets/home-product-01.webp" },
+  { id: "home-product-03", title: "Everyday Graphic Tee", variant: "White", price: 32, image: "assets/home-product-03.webp" }
 ];
 
 const readStore = (key, fallback) => {
@@ -77,19 +77,19 @@ const productCard = ({ image, title = "Men's Essential Tee", variant = "(Black)"
 };
 
 const homeFeatured = [
-  "assets/home-product-01.jpg",
-  "assets/home-product-02.jpg",
-  "assets/home-product-03.jpg",
-  "assets/home-product-04.jpg"
+  "assets/home-product-01.webp",
+  "assets/home-product-02.webp",
+  "assets/home-product-03.webp",
+  "assets/home-product-04.webp"
 ];
-const homeLatest = Array.from({ length: 8 }, (_, index) => `assets/home-product-${String(index + 5).padStart(2, "0")}.jpg`);
-const catalogProducts = Array.from({ length: 24 }, (_, index) => `assets/listing-product-${String(index + 1).padStart(2, "0")}.jpg`);
+const homeLatest = Array.from({ length: 8 }, (_, index) => `assets/home-product-${String(index + 5).padStart(2, "0")}.webp`);
+const catalogProducts = Array.from({ length: 24 }, (_, index) => `assets/listing-product-${String(index + 1).padStart(2, "0")}.webp`);
 const relatedProducts = [
-  "assets/detail-related-01.jpg",
-  "assets/detail-related-02.jpg",
-  "assets/detail-related-03.jpg",
-  "assets/detail-related-04.jpg",
-  "assets/detail-related-04.jpg"
+  "assets/detail-related-01.webp",
+  "assets/detail-related-02.webp",
+  "assets/detail-related-03.webp",
+  "assets/detail-related-04.webp",
+  "assets/detail-related-04.webp"
 ];
 
 document.querySelectorAll("[data-home-grid='featured']").forEach((grid) => {
@@ -361,7 +361,7 @@ document.addEventListener("click", (event) => {
 
   const wishlist = event.target.closest(".wishlist-action");
   if (wishlist) {
-    const selected = toggleFavorite({ id: "drop-01", title: "Drop 01", variant: "4-pack · Blue", price: 150, image: "assets/detail-main.jpg" });
+    const selected = toggleFavorite({ id: "drop-01", title: "Drop 01", variant: "4-pack · Blue", price: 150, image: "assets/detail-main.webp" });
     wishlist.classList.toggle("button--muted", !selected);
     wishlist.classList.toggle("button--primary", selected);
     wishlist.innerHTML = `${selected ? "♥" : "♡"} <span>${selected ? "Saved" : "Add To Wishlist"}</span>`;
@@ -369,7 +369,7 @@ document.addEventListener("click", (event) => {
 
   const addCartButton = event.target.closest(".add-cart-action");
   if (addCartButton) {
-    addToCart({ id: "drop-01", title: "Drop 01", variant: "4-pack · Blue", price: 150, image: "assets/detail-related-01.jpg" });
+    addToCart({ id: "drop-01", title: "Drop 01", variant: "4-pack · Blue", price: 150, image: "assets/detail-related-01.webp" });
     addCartButton.textContent = "Added To Cart";
   }
 

@@ -254,7 +254,7 @@ p {
 .home-header {
   min-height: 650px;
   color: #fff;
-  background: #5d829b url("assets/home-hero.jpg") center 30% / cover no-repeat;
+  background: #5d829b url("assets/home-hero.webp") center 30% / cover no-repeat;
 }
 
 .home-hero {
@@ -846,7 +846,7 @@ p {
   place-items: center;
   overflow: hidden;
   color: #fff;
-  background: #c1a552 url("assets/listing-hero.jpg") center / cover no-repeat;
+  background: #c1a552 url("assets/listing-hero.webp") center / cover no-repeat;
 }
 
 .listing-hero__content {
@@ -2242,7 +2242,7 @@ p {
 .page-intro--journal {
   background:
     linear-gradient(90deg, rgba(255, 248, 248, 0.96), rgba(255, 248, 248, 0.84)),
-    url("assets/blog-03.jpg") center / cover;
+    url("assets/blog-03.webp") center / cover;
 }
 
 .featured-post-section {

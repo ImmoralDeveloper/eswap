@@ -73,7 +73,7 @@ if ([string]::IsNullOrWhiteSpace($Destination)) {
 }
 
 $converter = Get-Converter
-$extensions = @(".jpg", ".jpeg", ".webp", ".bmp", ".tif", ".tiff")
+$extensions = @(".webp", ".jpeg", ".webp", ".bmp", ".tif", ".tiff")
 $images = Get-ChildItem -LiteralPath $sourcePath -Recurse -File |
   Where-Object { $extensions -contains $_.Extension.ToLowerInvariant() }
 
