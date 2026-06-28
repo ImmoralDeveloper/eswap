@@ -172,7 +172,18 @@ p {
   gap: 14px;
   margin-left: auto;
 }
-
+.favorite-button {
+  font-size: 36px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(232, 232, 232, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .account-circle,
 .cart-button,
 .icon-button {
@@ -201,6 +212,9 @@ p {
 }
 
 .icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 42px;
   height: 42px;
   background: transparent;
@@ -210,10 +224,16 @@ p {
 .cart-button {
   position: relative;
 }
+.cart-button {
+}
+.cart-button svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--soft);
+}
 
-.cart-button span {
-  transform: translateY(1px) scale(0.8);
-  filter: grayscale(1);
+.site-header:not(.home-header) .cart-button svg {
+  fill: var(--light-gray);
 }
 
 .cart-button b {
@@ -755,18 +775,21 @@ p {
   position: absolute;
   z-index: 3;
   top: 50%;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   color: #fff;
   background: rgba(37, 43, 66, 0.65);
-  font-size: 28px;
   transform: translateY(-50%);
 }
-
+.instagram-arrow svg {
+  width: 30px;
+  height: 30px;
+}
 .instagram-arrow--prev {
   left: -54px;
 }
@@ -1674,7 +1697,10 @@ p {
     background: #fff;
     box-shadow: var(--shadow);
     opacity: 0;
-    transition: max-height 220ms ease, opacity 180ms ease, padding 220ms ease;
+    transition:
+      max-height 220ms ease,
+      opacity 180ms ease,
+      padding 220ms ease;
   }
 
   .mobile-menu.open {

@@ -1,31 +1,80 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Favorites — Figmaland</title>
-  <meta name="description" content="Your saved Figmaland pieces">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <nav class="navbar container-wide" aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/logo-dark.webp" alt="Figmaland"></a><div class="desktop-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div><div class="nav-actions"><span class="account-circle">♙</span><a class="account-label" href="account.html">My Account</a><a class="icon-button favorite-button" href="favorites.html" aria-label="Favorites">♥</a><a class="cart-button" href="cart.html" aria-label="Shopping cart"><span>🛒</span><b data-cart-count>1</b></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div></nav>
-    <div class="breadcrumb"><div class="container-wide"><a href="index.html">Home</a><span>›</span><span>Favorites</span></div></div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Favorites — Figmaland</title>
+    <meta name="description" content="Your saved Figmaland pieces" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container-wide" aria-label="Main navigation">
+        <a class="brand" href="index.html"><img src="assets/logo-dark.webp" alt="Figmaland" /></a>
+        <div class="desktop-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div>
+        <div class="nav-actions">
+          <span class="account-circle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<circle cx="12" cy="6" r="4" fill="currentColor" />
+	<path fill="currentColor" d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+</svg>
+</span><a class="account-label" href="account.html">My Account</a><a class="favorite-button" href="favorites.html" aria-label="Favorites">♥</a
+          ><a class="cart-button" href="cart.html" aria-label="Shopping cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z" />
+            </svg>
+            <b data-cart-count>1</b></a
+          ><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div>
+      </nav>
+      <div class="breadcrumb">
+        <div class="container-wide"><a href="index.html">Home</a><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<g fill="none" fill-rule="evenodd">
+		<path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+		<path fill="currentColor" d="M16.06 10.94a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 1 1-2.121-2.122L12.879 12L8.283 7.404a1.5 1.5 0 0 1 2.12-2.122l5.658 5.657Z" />
+	</g>
+</svg></span><span>Favorites</span></div>
+      </div>
+    </header>
 
-  <main class="commerce-page">
-    <header class="commerce-heading container"><p class="eyebrow">SAVED FOR LATER</p><h1>Your favorites</h1><p>Keep a short list, compare pieces and move the right ones to your cart.</p></header>
-    <section class="favorites-section container">
-      <div class="favorites-toolbar"><p><b data-favorites-total>0</b> saved pieces</p><select aria-label="Sort favorites"><option>Recently saved</option><option>Price: low to high</option><option>Price: high to low</option></select></div>
-      <div class="favorites-grid" data-favorites-grid></div>
-      <div class="empty-state" data-favorites-empty hidden><span>♡</span><h2>No favorites yet</h2><p>Use the heart on any product to keep it here.</p><a class="button button--primary" href="products.html">Discover products</a></div>
-    </section>
-  </main>
+    <main class="commerce-page">
+      <header class="commerce-heading container">
+        <p class="eyebrow">SAVED FOR LATER</p>
+        <h1>Your favorites</h1>
+        <p>Keep a short list, compare pieces and move the right ones to your cart.</p>
+      </header>
+      <section class="favorites-section container">
+        <div class="favorites-toolbar">
+          <p><b data-favorites-total>0</b> saved pieces</p>
+          <select aria-label="Sort favorites">
+            <option>Recently saved</option>
+            <option>Price: low to high</option>
+            <option>Price: high to low</option>
+          </select>
+        </div>
+        <div class="favorites-grid" data-favorites-grid></div>
+        <div class="empty-state" data-favorites-empty hidden>
+          <span>♡</span>
+          <h2>No favorites yet</h2>
+          <p>Use the heart on any product to keep it here.</p>
+          <a class="button button--primary" href="products.html">Discover products</a>
+        </div>
+      </section>
+    </main>
 
-  <footer class="site-footer"><div class="site-footer__inner container-wide"><a class="brand" href="index.html"><img src="assets/logo-light.webp" alt="Figmaland"></a><nav class="footer-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></nav><div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div></div></footer>
-  <script src="script.js"></script>
-</body>
+    <footer class="site-footer">
+      <div class="site-footer__inner container-wide">
+        <a class="brand" href="index.html"><img src="assets/logo-light.webp" alt="Figmaland" /></a>
+        <nav class="footer-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></nav>
+        <div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
