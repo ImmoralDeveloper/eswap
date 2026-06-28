@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login or register — Figmaland</title>
+  <meta name="description" content="Access your Figmaland account">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <header class="auth-header"><a class="brand" href="index.html"><img src="assets/logo-dark.png" alt="Figmaland"></a><a href="index.html">← Back to shop</a></header>
+  <main class="auth-shell">
+    <section class="auth-visual">
+      <img src="assets/home-hero.jpg" alt="">
+      <div><p class="eyebrow">YOUR FIGMALAND</p><h1>Keep the pieces you love close.</h1><p>Save favorites, follow orders and make checkout quicker from one place.</p></div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-panel__inner">
+        <p class="eyebrow">WELCOME</p>
+        <h1>Access your account</h1>
+        <div class="auth-tabs" role="tablist"><button class="active" type="button" data-auth-tab="login">Login</button><button type="button" data-auth-tab="register">Register</button></div>
+
+        <form class="auth-form active" data-auth-form="login">
+          <label>Username<input name="username" autocomplete="username" required placeholder="Enter your username"></label>
+          <label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="Enter your password"></label>
+          <div class="form-row"><label class="check-label"><input type="checkbox"> Remember me</label><a href="#">Forgot password?</a></div>
+          <button class="button button--primary button--block" type="submit">Login</button>
+          <div class="demo-credentials"><span>Demo account</span><button type="button" data-fill-demo><b>demo</b> / <b>demo</b></button></div>
+        </form>
+
+        <form class="auth-form" data-auth-form="register">
+          <label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label>Username<input name="username" autocomplete="username" required placeholder="Choose a username"></label>
+          <label>Password<input name="password" type="password" minlength="4" autocomplete="new-password" required placeholder="At least 4 characters"></label>
+          <label class="check-label"><input type="checkbox" required> I accept the terms and privacy policy</label>
+          <button class="button button--primary button--block" type="submit">Create account</button>
+        </form>
+        <p class="form-feedback" data-auth-feedback aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

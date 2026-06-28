@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Favorites — Figmaland</title>
+  <meta name="description" content="Your saved Figmaland pieces">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container-wide" aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/logo-dark.png" alt="Figmaland"></a><div class="desktop-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div><div class="nav-actions"><span class="account-circle">♙</span><a class="account-label" href="account.html">My Account</a><a class="icon-button favorite-button" href="favorites.html" aria-label="Favorites">♥</a><a class="cart-button" href="cart.html" aria-label="Shopping cart"><span>🛒</span><b data-cart-count>1</b></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button></div><div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div></nav>
+    <div class="breadcrumb"><div class="container-wide"><a href="index.html">Home</a><span>›</span><span>Favorites</span></div></div>
+  </header>
+
+  <main class="commerce-page">
+    <header class="commerce-heading container"><p class="eyebrow">SAVED FOR LATER</p><h1>Your favorites</h1><p>Keep a short list, compare pieces and move the right ones to your cart.</p></header>
+    <section class="favorites-section container">
+      <div class="favorites-toolbar"><p><b data-favorites-total>0</b> saved pieces</p><select aria-label="Sort favorites"><option>Recently saved</option><option>Price: low to high</option><option>Price: high to low</option></select></div>
+      <div class="favorites-grid" data-favorites-grid></div>
+      <div class="empty-state" data-favorites-empty hidden><span>♡</span><h2>No favorites yet</h2><p>Use the heart on any product to keep it here.</p><a class="button button--primary" href="products.html">Discover products</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="site-footer__inner container-wide"><a class="brand" href="index.html"><img src="assets/logo-light.png" alt="Figmaland"></a><nav class="footer-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></nav><div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

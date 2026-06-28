@@ -19,17 +19,15 @@
       <div class="desktop-nav">
         <a class="active" href="index.html">Home</a>
         <a href="products.html">Shop</a>
-        <a href="#">Account</a>
-        <a href="#">Pages</a>
-        <a href="#blog">Blog</a>
-        <a href="#">Docs / Components</a>
+        <a href="account.html">Account</a>
+        <a href="blog.html">Blog</a>
       </div>
       <div class="nav-actions">
         <span class="account-circle" aria-hidden="true">♙</span>
-        <a class="account-label" href="#">My Account</a>
-        <button class="icon-button favorite-button" type="button" aria-label="Favorites">♡</button>
-        <a class="cart-button" href="product.html" aria-label="Shopping cart">
-          <span aria-hidden="true">🛒</span><b>1</b>
+        <a class="account-label" href="account.html">My Account</a>
+        <a class="icon-button favorite-button" href="favorites.html" aria-label="Favorites">♡</a>
+        <a class="cart-button" href="cart.html" aria-label="Shopping cart">
+          <span aria-hidden="true">🛒</span><b data-cart-count>1</b>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
           <span></span><span></span><span></span>
@@ -38,10 +36,10 @@
       <div class="mobile-menu" id="mobile-menu">
         <a href="index.html">Home</a>
         <a href="products.html">Shop</a>
-        <a href="#">Account</a>
-        <a href="#">Pages</a>
-        <a href="#blog">Blog</a>
-        <a href="#">Docs / Components</a>
+        <a href="account.html">Account</a>
+        
+        <a href="blog.html">Blog</a>
+        
       </div>
     </nav>
 
@@ -139,14 +137,24 @@
 
     <section class="instagram-section" aria-labelledby="instagram-title">
       <h2 id="instagram-title">Shop on Instagram</h2>
-      <div class="instagram-track">
-        <a class="instagram-card" href="#"><img src="assets/instagram-05.jpg" alt="Summer fashion"><span>Summer</span></a>
-        <a class="instagram-card" href="#"><img src="assets/instagram-01.jpg" alt="Bags"><span>Bags</span></a>
-        <a class="instagram-card" href="#"><img src="assets/instagram-02.jpg" alt="Hats"><span>Hats</span></a>
-        <a class="instagram-card" href="#"><img src="assets/instagram-03.jpg" alt="Casual fashion"><span>Casual</span></a>
-        <a class="instagram-card" href="#"><img src="assets/instagram-04.jpg" alt="Artist fashion"><span>Artists</span></a>
+      <div class="instagram-slider" data-instagram-slider>
+        <button class="instagram-arrow instagram-arrow--prev" type="button" aria-label="Previous Instagram post">‹</button>
+        <div class="instagram-viewport">
+          <div class="instagram-track">
+            <a class="instagram-card" href="#"><img src="assets/instagram-05.jpg" alt="Summer fashion"><span>Summer</span></a>
+            <a class="instagram-card" href="#"><img src="assets/instagram-01.jpg" alt="Bags"><span>Bags</span></a>
+            <a class="instagram-card" href="#"><img src="assets/instagram-02.jpg" alt="Hats"><span>Hats</span></a>
+            <a class="instagram-card" href="#"><img src="assets/instagram-03.jpg" alt="Casual fashion"><span>Casual</span></a>
+            <a class="instagram-card" href="#"><img src="assets/instagram-04.jpg" alt="Artist fashion"><span>Artists</span></a>
+          </div>
+        </div>
+        <button class="instagram-arrow instagram-arrow--next" type="button" aria-label="Next Instagram post">›</button>
       </div>
-      <div class="carousel-dots" aria-hidden="true"><i></i><i class="active"></i><i></i></div>
+      <div class="carousel-dots" aria-label="Instagram slides">
+        <button class="active" type="button" aria-label="Slide 1"></button>
+        <button type="button" aria-label="Slide 2"></button>
+        <button type="button" aria-label="Slide 3"></button>
+      </div>
     </section>
   </main>
 
@@ -156,10 +164,10 @@
       <nav class="footer-nav" aria-label="Footer navigation">
         <a class="active" href="index.html">Home</a>
         <a href="products.html">Shop</a>
-        <a href="#">Account</a>
-        <a href="#">Pages</a>
-        <a href="#blog">Blog</a>
-        <a href="#">Docs / Components</a>
+        <a href="account.html">Account</a>
+        
+        <a href="blog.html">Blog</a>
+        
       </nav>
       <div class="social-links" aria-label="Social networks">
         <a href="#" aria-label="Twitter">♥</a>

@@ -14,14 +14,14 @@
   <header class="site-header">
     <nav class="navbar container-wide" aria-label="Main navigation">
       <a class="brand" href="index.html"><img src="assets/logo-dark.png" alt="Figmaland"></a>
-      <div class="desktop-nav"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a></div>
+      <div class="desktop-nav"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div>
       <div class="nav-actions">
-        <span class="account-circle">♙</span><a class="account-label" href="#">My Account</a>
-        <button class="icon-button favorite-button" type="button" aria-label="Favorites">♡</button>
-        <a class="cart-button" href="product.html" aria-label="Shopping cart"><span>🛒</span><b>1</b></a>
+        <span class="account-circle">♙</span><a class="account-label" href="account.html">My Account</a>
+        <a class="icon-button favorite-button" href="favorites.html" aria-label="Favorites">♡</a>
+        <a class="cart-button" href="cart.html" aria-label="Shopping cart"><span>🛒</span><b data-cart-count>1</b></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
-      <div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a></div>
+      <div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div>
     </nav>
     <div class="breadcrumb"><div class="container-wide"><a href="index.html">Home</a><span>›</span><span>Marketplace Products</span></div></div>
   </header>
@@ -36,12 +36,12 @@
           </div>
           <div class="thumbnail-strip" data-thumbnail-strip>
             <button class="carousel-arrow prev" type="button" aria-label="Previous image">‹</button>
-            <button class="thumbnail active" type="button" data-image="assets/detail-main.jpg"><img src="assets/detail-thumb-01.jpg" alt=""></button>
-            <button class="thumbnail" type="button" data-image="assets/detail-thumb-02.jpg"><img src="assets/detail-thumb-02.jpg" alt=""></button>
-            <button class="thumbnail" type="button" data-image="assets/detail-thumb-03.jpg"><img src="assets/detail-thumb-03.jpg" alt=""></button>
-            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/detail-thumb-04.jpg"><img src="assets/detail-thumb-04.jpg" alt=""></button>
-            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/detail-thumb-05.jpg"><img src="assets/detail-thumb-05.jpg" alt=""></button>
-            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/detail-thumb-06.jpg"><img src="assets/detail-thumb-06.jpg" alt=""></button>
+            <button class="thumbnail active" type="button" data-image="assets/detail-main.jpg" data-position="center"><img src="assets/detail-thumb-01.jpg" alt="Shirt and tie set overview"></button>
+            <button class="thumbnail" type="button" data-image="assets/detail-main.jpg" data-position="left center"><img src="assets/detail-thumb-02.jpg" alt="Shirt fabric detail"></button>
+            <button class="thumbnail" type="button" data-image="assets/detail-main.jpg" data-position="right center"><img src="assets/detail-thumb-03.jpg" alt="Tie detail"></button>
+            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/home-product-02.jpg" data-position="center"><img src="assets/home-product-02.jpg" alt="Drop 01 styled with white shirt"></button>
+            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/home-product-04.jpg" data-position="center"><img src="assets/home-product-04.jpg" alt="Drop 01 casual styling"></button>
+            <button class="thumbnail thumbnail--desktop" type="button" data-image="assets/category-clothes.jpg" data-position="center"><img src="assets/category-clothes.jpg" alt="Drop 01 folded set"></button>
             <button class="carousel-arrow next" type="button" aria-label="Next image">›</button>
           </div>
         </div>
@@ -53,7 +53,7 @@
           <div class="color-picker"><b>Color</b><div><button class="cyan active" aria-label="Cyan"></button><button class="green" aria-label="Green"></button><button class="orange" aria-label="Orange"></button><button class="navy" aria-label="Navy"></button></div></div>
           <div class="purchase-actions">
             <button class="button button--muted wishlist-action" type="button">♡ <span>Add To Wishlist</span></button>
-            <button class="button button--primary add-cart-action" type="button">Add To Card</button>
+            <button class="button button--primary add-cart-action" type="button" data-product-id="drop-01">Add To Cart</button>
           </div>
           <div class="product-description">
             <h2>Product Description</h2>
@@ -93,7 +93,7 @@
   <footer class="site-footer">
     <div class="site-footer__inner container-wide">
       <a class="brand" href="index.html"><img src="assets/logo-light.png" alt="Figmaland"></a>
-      <nav class="footer-nav"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="#">Account</a><a href="#">Pages</a><a href="#">Blog</a><a href="#">Docs / Components</a></nav>
+      <nav class="footer-nav"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></nav>
       <div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div>
     </div>
   </footer>

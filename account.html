@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My account — Figmaland</title>
+    <meta name="description" content="Manage your Figmaland profile, orders and saved items" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container-wide" aria-label="Main navigation">
+        <a class="brand" href="index.html"><img src="assets/logo-dark.png" alt="Figmaland" /></a>
+        <div class="desktop-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a class="active" href="account.html">Account</a><a href="blog.html">Blog</a></div>
+        <div class="nav-actions">
+          <span class="account-circle">♙</span><a class="account-label" href="account.html">My Account</a><a class="icon-button favorite-button" href="favorites.html" aria-label="Favorites">♡</a><a class="cart-button" href="cart.html" aria-label="Shopping cart"><span>🛒</span><b data-cart-count>1</b></a
+          ><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div>
+      </nav>
+      <div class="breadcrumb">
+        <div class="container-wide"><a href="index.html">Home</a><span>›</span><span>My account</span></div>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <section class="account-guest container" data-account-guest hidden>
+        <div class="empty-state">
+          <span>♙</span>
+          <p class="eyebrow">YOUR ACCOUNT</p>
+          <h1>Sign in to see your space</h1>
+          <p>Access orders, favorites and saved details from one place.</p>
+          <a class="button button--primary" href="auth.html">Login or register</a>
+        </div>
+      </section>
+
+      <section class="account-dashboard container" data-account-user hidden>
+        <header class="dashboard-header">
+          <div>
+            <p class="eyebrow">MY ACCOUNT</p>
+            <h1>Welcome back, <span data-account-name>Demo</span>.</h1>
+            <p>Here is what is happening with your Figmaland account.</p>
+          </div>
+          <button class="button button--outline" type="button" data-logout>Log out</button>
+        </header>
+        <div class="account-stats">
+          <a href="#orders"><span>01</span><b>Active order</b><small>Arrives 2–4 Jul</small></a
+          ><a href="favorites.html"><span data-favorite-count>2</span><b>Saved pieces</b><small>View favorites</small></a
+          ><a href="cart.html"><span data-account-cart-count>1</span><b>Cart items</b><small>Continue checkout</small></a>
+        </div>
+        <div class="dashboard-grid">
+          <section class="dashboard-card dashboard-card--orders" id="orders">
+            <div class="dashboard-card__heading">
+              <div>
+                <p class="eyebrow">RECENT ORDER</p>
+                <h2>Order #FG-2841</h2>
+              </div>
+              <span class="status-pill">In transit</span>
+            </div>
+            <div class="order-product">
+              <img src="assets/detail-related-01.jpg" alt="Drop 01 set" />
+              <div><b>Drop 01 (4-pack)</b><span>Color: Blue · Qty: 1</span><strong>$150.00</strong></div>
+            </div>
+            <div class="order-progress">
+              <i></i>
+              <div><span>Confirmed</span><span>In transit</span><span>Delivered</span></div>
+            </div>
+            <button class="text-link" type="button">Track package →</button>
+          </section>
+          <section class="dashboard-card">
+            <p class="eyebrow">PROFILE</p>
+            <h2>Your details</h2>
+            <form class="profile-form" data-profile-form>
+              <label>Name<input name="name" value="Demo User" /></label><label>Email<input name="email" type="email" value="demo@figmaland.test" /></label><label>Phone<input name="phone" value="+51 999 555 111" /></label><button class="button button--primary" type="submit">Save changes</button><span data-profile-feedback></span>
+            </form>
+          </section>
+          <section class="dashboard-card">
+            <p class="eyebrow">DELIVERY</p>
+            <h2>Default address</h2>
+            <address><b>Demo User</b><span>Av. Larco 1234</span><span>Miraflores, Lima</span><span>Peru</span></address>
+            <button class="text-link" type="button">Edit address →</button>
+          </section>
+          <section class="dashboard-card dashboard-links">
+            <p class="eyebrow">QUICK LINKS</p>
+            <h2>Continue exploring</h2>
+            <a href="favorites.html"
+              ><span>♡</span>
+              <div><b>Favorites</b><small>Pieces you saved</small></div>
+              <i>→</i></a
+            ><a href="cart.html"
+              ><span>🛒</span>
+              <div><b>Shopping cart</b><small>Review your selection</small></div>
+              <i>→</i></a
+            ><a href="blog.html"
+              ><span>✦</span>
+              <div><b>Journal</b><small>Read the latest stories</small></div>
+              <i>→</i></a
+            >
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner container-wide">
+        <a class="brand" href="index.html"><img src="assets/logo-light.png" alt="Figmaland" /></a>
+        <nav class="footer-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a class="active" href="account.html">Account</a><a href="blog.html">Blog</a></nav>
+        <div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal — Figmaland</title>
+  <meta name="description" content="Ideas, style guides and stories from Figmaland">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container-wide" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/logo-dark.png" alt="Figmaland"></a>
+      <div class="desktop-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a class="active" href="blog.html">Blog</a></div>
+      <div class="nav-actions">
+        <span class="account-circle">♙</span><a class="account-label" href="account.html">My Account</a>
+        <a class="icon-button favorite-button" href="favorites.html" aria-label="Favorites">♡</a>
+        <a class="cart-button" href="cart.html" aria-label="Shopping cart"><span>🛒</span><b data-cart-count>1</b></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a href="blog.html">Blog</a></div>
+    </nav>
+    <div class="breadcrumb"><div class="container-wide"><a href="index.html">Home</a><span>›</span><span>Journal</span></div></div>
+  </header>
+
+  <main class="journal-page">
+    <section class="page-intro page-intro--journal">
+      <div class="container">
+        <p class="eyebrow">FIGMALAND JOURNAL</p>
+        <h1>Style is built in the details</h1>
+        <p>Practical guides, new perspectives and the people behind what we wear.</p>
+      </div>
+    </section>
+
+    <section class="featured-post-section">
+      <article class="featured-post container">
+        <a class="featured-post__image" href="post.html">
+          <img src="assets/blog-01.jpg" alt="Travel essentials arranged on a map">
+          <span>★ Featured</span>
+        </a>
+        <div class="featured-post__content">
+          <time datetime="2026-06-21">21 Jun 2026</time>
+          <p class="post-kicker">TRAVEL · STYLE</p>
+          <h2><a href="post.html">How to build a travel wardrobe that works harder</a></h2>
+          <p>A compact wardrobe can still carry personality. Start with four dependable pieces, then use color and texture to make every combination feel intentional.</p>
+          <a class="button button--primary" href="post.html">Read article <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="journal-content container">
+      <div class="journal-main">
+        <div class="journal-heading">
+          <div><p class="eyebrow">LATEST STORIES</p><h2>From the journal</h2></div>
+          <p data-filter-result>Showing all articles</p>
+        </div>
+        <div class="journal-grid" data-blog-grid>
+          <article class="blog-card journal-card" data-tags="travel style">
+            <img src="assets/blog-01.jpg" alt="Travel planning on a paper map">
+            <div class="blog-card__body"><div class="journal-card__meta"><span>Travel</span><time>20 Jun 2026</time></div><h3><a href="post.html">The carry-on edit: twelve pieces, one week</a></h3><p>Build combinations that move easily from airport mornings to late dinners.</p><a class="text-link" href="post.html">Read article →</a></div>
+          </article>
+          <article class="blog-card journal-card" data-tags="color trends">
+            <img src="assets/blog-02.jpg" alt="Bright colors against a blue background">
+            <div class="blog-card__body"><div class="journal-card__meta"><span>Color</span><time>18 Jun 2026</time></div><h3><a href="post.html">Three color pairings worth trying this summer</a></h3><p>Unexpected combinations that bring new energy to familiar silhouettes.</p><a class="text-link" href="post.html">Read article →</a></div>
+          </article>
+          <article class="blog-card journal-card" data-tags="accessories travel">
+            <img src="assets/blog-03.jpg" alt="Accessories packed for a journey">
+            <div class="blog-card__body"><div class="journal-card__meta"><span>Accessories</span><time>14 Jun 2026</time></div><h3><a href="post.html">Small objects, strong point of view</a></h3><p>The finishing pieces that make a simple outfit feel completely considered.</p><a class="text-link" href="post.html">Read article →</a></div>
+          </article>
+          <article class="blog-card journal-card" data-tags="people style">
+            <img src="assets/home-product-01.jpg" alt="Woman wearing a floral red dress">
+            <div class="blog-card__body"><div class="journal-card__meta"><span>People</span><time>09 Jun 2026</time></div><h3><a href="post.html">In her own words: the art of getting dressed</a></h3><p>A conversation about memory, confidence and the clothes we keep.</p><a class="text-link" href="post.html">Read article →</a></div>
+          </article>
+          <article class="blog-card journal-card" data-tags="care essentials">
+            <img src="assets/category-clothes.jpg" alt="Shirt and tie arranged together">
+            <div class="blog-card__body"><div class="journal-card__meta"><span>Care</span><time>04 Jun 2026</time></div><h3><a href="post.html">A better routine for the clothes you love</a></h3><p>Wash less, repair sooner and store pieces so they hold their shape.</p><a class="text-link" href="post.html">Read article →</a></div>
+          </article>
+          <article class="blog-card journal-card" data-tags="shoes essentials">
+            <img src="assets/category-shoes.jpg" alt="Red running shoe">
+            <div class="blog-card__body"><div class="journal-card__meta"><span>Shoes</span><time>28 May 2026</time></div><h3><a href="post.html">The everyday shoe guide</a></h3><p>Four categories that cover workdays, weekends and everything between.</p><a class="text-link" href="post.html">Read article →</a></div>
+          </article>
+        </div>
+        <div class="journal-empty" data-blog-empty hidden>No articles match this tag.</div>
+      </div>
+
+      <aside class="journal-sidebar">
+        <div class="sidebar-panel">
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Tags</h2>
+          <div class="tag-cloud" data-tag-cloud>
+            <button class="active" type="button" data-blog-filter="all">All</button>
+            <button type="button" data-blog-filter="style">Style</button>
+            <button type="button" data-blog-filter="travel">Travel</button>
+            <button type="button" data-blog-filter="color">Color</button>
+            <button type="button" data-blog-filter="accessories">Accessories</button>
+            <button type="button" data-blog-filter="people">People</button>
+            <button type="button" data-blog-filter="care">Care</button>
+            <button type="button" data-blog-filter="shoes">Shoes</button>
+          </div>
+        </div>
+        <div class="sidebar-panel">
+          <p class="eyebrow">MOST READ</p>
+          <h2>Popular now</h2>
+          <ol class="popular-posts" data-popular-posts>
+            <li data-tags="travel style"><span>01</span><a href="post.html">The carry-on edit: twelve pieces, one week</a></li>
+            <li data-tags="color trends"><span>02</span><a href="post.html">Three color pairings worth trying</a></li>
+            <li data-tags="care essentials"><span>03</span><a href="post.html">A better routine for the clothes you love</a></li>
+            <li data-tags="people style"><span>04</span><a href="post.html">The art of getting dressed</a></li>
+            <li data-tags="shoes essentials"><span>05</span><a href="post.html">The everyday shoe guide</a></li>
+          </ol>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container-wide">
+      <a class="brand" href="index.html"><img src="assets/logo-light.png" alt="Figmaland"></a>
+      <nav class="footer-nav"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="account.html">Account</a><a class="active" href="blog.html">Blog</a></nav>
+      <div class="social-links"><a href="#">♥</a><a href="#">f</a><a href="#">in</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
