@@ -136,7 +136,7 @@ const renderCart = () => {
     <article class="cart-item" data-cart-id="${item.id}">
       <div class="cart-item__product">
         <a href="product.html"><img src="${item.image}" alt="${item.title}"></a>
-        <div><p class="post-kicker">${item.id === "drop-01" ? "FIGMALAND EDIT" : "FAVORITE"}</p><h2><a href="product.html">${item.title}</a></h2><span>${item.variant}</span><button type="button" data-cart-remove>Remove</button></div>
+        <div><p class="post-kicker">${item.id === "drop-01" ? "Swap EDIT" : "FAVORITE"}</p><h2><a href="product.html">${item.title}</a></h2><span>${item.variant}</span><button type="button" data-cart-remove>Remove</button></div>
       </div>
       <div class="quantity-control"><button type="button" data-cart-decrease aria-label="Decrease quantity">−</button><span>${item.quantity}</span><button type="button" data-cart-increase aria-label="Increase quantity">+</button></div>
       <strong>${money(item.price * item.quantity)}</strong>
@@ -184,7 +184,7 @@ const initializeAccount = () => {
     const nameInput = document.querySelector("[data-profile-form] [name='name']");
     const emailInput = document.querySelector("[data-profile-form] [name='email']");
     if (nameInput) nameInput.value = session.name || "Demo User";
-    if (emailInput) emailInput.value = session.email || "demo@figmaland.test";
+    if (emailInput) emailInput.value = session.email || "demo@Swap.test";
   }
 };
 
@@ -216,7 +216,7 @@ const setupAuth = () => {
         return;
       }
       const user = isDemo
-        ? { loggedIn: true, username: "demo", name: "Demo User", email: "demo@figmaland.test" }
+        ? { loggedIn: true, username: "demo", name: "Demo User", email: "demo@Swap.test" }
         : { loggedIn: true, username, name: registered.name, email: registered.email };
       writeStore(STORE_KEYS.session, user);
       showFeedback("Login successful. Opening your account…");
